@@ -3,7 +3,7 @@
 
 # Trucamos archivo y añadimos una lista
 file = open('data.txt', 'w')
-datos = ['**Primer acceso al archivo','dato 1', 'dato 2', 'dato 3\n', 'dato 4', 'dato 5']
+datos = ['**Primer acceso al archivo', 'dato 1', 'dato 2', 'dato 3\n', 'dato 4', 'dato 5']
 
 for dato in datos:
     if not dato.endswith('\n'):
@@ -19,14 +19,16 @@ file = open('data.txt', 'r+')
 file.readlines()
 file.write("**Segundo acceso al archivo\n")
 file.write("Añadimos una linea extra de prueba")
-file.close()
 
-# Volvemos a cargar el archivo para mostrar los datos
-file = open('data.txt', 'r+')
+# Posicionamos el cursor de lectura al princpio para volver a leer la lineas.
+file.seek(0)
 datos = file.readlines()
 
+# Sacamos por pantalla
+linea = 1
 for dato in datos:
     dato = dato.rstrip('\n')
-    print(dato)
+    print(f"Línea {linea}: {dato}")
+    linea += 1
 
 file.close()
