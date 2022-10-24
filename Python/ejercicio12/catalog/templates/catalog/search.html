@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h2>Buscar</h2>
+<form class="form-group" action="{% url 'catalog:results' %}" method="post">
+{% csrf_token %}
+
+        <legend>Búsqueda por nombre de director</legend>
+        <input type="text" name="name" placeholder="Nombre del director">
+
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}

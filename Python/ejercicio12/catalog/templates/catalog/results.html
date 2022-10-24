@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h2>Resultados</h2>
+Estos son los resultados para <b><i>{{search}}</i></b>
+
+
+{% for director in directors_list %}
+    <ul>
+        <li><b>{{director.name}} {{director.family_name}}</b></li>
+        <ul>
+            {% for film in films %}
+                {%if film.director == director %}
+            <li><b>{{film.title}}</b> <i>({{film.year}}):</i> {{film.sinopsis}}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </ul>
+{% endfor %}
+
+
+{% endblock %}
