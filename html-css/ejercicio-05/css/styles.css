@@ -1,0 +1,61 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 300px;
+    gap: 20px;
+}
+
+.fondo {
+    position: fixed;
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+    gap: 20px;
+}
+
+.texto-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    height: 300px;
+    gap: 20px;
+       
+}
+
+.galeria {
+    position: relative;
+    display: flexbox;
+}
+
+.titulo-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.galeria-bloque {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    }
+
+.imagen-galeria {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.imagen-galeria:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
