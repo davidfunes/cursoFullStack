@@ -1,5 +1,6 @@
 .col {
-    background-color:aqua;
+    background-color: salmon;
     padding: 0.5rem;
-    border: solid black 1px;
+    border: none;
+    border-radius: 5px;
 }
