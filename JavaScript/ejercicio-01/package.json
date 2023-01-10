@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio-01",
+  "version": "1.0.0",
+  "description": "Ejercicio 01 del curso de JavaScript Básico",
+  "main": "index.js",
+  "scripts": {
+    "saludo": "node saludo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ejercicio",
+    "javascript"
+  ],
+  "author": "David Funes",
+  "license": "ISC"
+}
