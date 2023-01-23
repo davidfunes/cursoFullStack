@@ -1,0 +1,14 @@
+{
+  "name": "ejercicio-03",
+  "version": "1.0.0",
+  "description": "Este es el ejercicio 3 del curso de JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "factorialb": "node factorial-break.js",
+    "factorialf": "node factorial-for.js",
+    "factorialw": "node factorial-while.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Funes Martín",
+  "license": "ISC"
+}
